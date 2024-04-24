@@ -54,12 +54,14 @@ class Television:
         if self.__status:
             if self.__volume < Television.MAX_VOLUME:
                 self.__volume += 1
+                self.__muted = False
 
     def volume_down(self) -> None:
         """Decreases the TV volume by 1 if the power is on"""
         if self.__status:
             if self.__volume > Television.MIN_VOLUME:
                 self.__volume -= 1
+                self.__muted = False
 
     def __str__(self) -> str:
         """Returns a str containing the power status, channel, and volume of the instance"""
