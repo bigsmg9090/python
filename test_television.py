@@ -58,11 +58,3 @@ class Test:
 		# power off
 		self.t2.volume_up()
 		assert str(self.t2) == "Power = False, Channel = 0, Volume = 0"
-
-
-
-
-
-
-
-
