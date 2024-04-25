@@ -2,7 +2,7 @@
 
 class Television:
     '''
-    Television class
+    Television class represents a television
     '''
     MIN_VOLUME = 0
     MAX_VOLUME = 2
